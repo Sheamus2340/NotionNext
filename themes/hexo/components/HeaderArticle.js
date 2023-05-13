@@ -7,7 +7,7 @@ export default function HeaderArticle({ post, siteInfo }) {
   const { locale } = useGlobal()
 
   if (!post) {
-    return <></>
+    return <>找不到文章</>
   }
   const headerImage = post?.page_cover ? `url("${post.page_cover}")` : `url("${siteInfo?.pageCover}")`
 
